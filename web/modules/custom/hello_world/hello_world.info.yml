@@ -1,0 +1,5 @@
+name: Hello World
+description: A module that stores product information imported from various sources
+core_version_requirement: ^9
+type: module
+package: Custom

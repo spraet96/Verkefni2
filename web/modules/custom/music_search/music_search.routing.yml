@@ -1,0 +1,7 @@
+music_search:
+  path: '/music_search'
+  defaults:
+    _controller: Drupal\music_search\Controller\MusicSearchController
+    _title: 'Search Bar'
+  requirements:
+    _permission: 'access content'
