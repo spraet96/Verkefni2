@@ -1,7 +1,23 @@
-music_search:
+music_search.search:
   path: '/music_search'
   defaults:
-    _controller: Drupal\music_search\Controller\MusicSearchController
-    _title: 'Search Bar'
+    _form: '\Drupal\music_search\Form\MusicSearchForm'
+    _title: 'Spotify Search'
+  requirements:
+    _permission: 'access content'
+
+music_search.submit:
+  path: '/music_search/submit_form'
+  defaults:
+    _form: '\Drupal\music_search\Form\MusicSearchSubmitForm'
+    _title: 'Spotify List'
+  requirements:
+    _permission: 'access content'
+
+music_search.choice:
+  path: '/music_search/choose_values'
+  defaults:
+    _form: '\Drupal\music_search\Form\MusicSearchChoiceForm'
+    _title: 'Choose attributes to save'
   requirements:
     _permission: 'access content'

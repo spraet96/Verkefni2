@@ -1,4 +1,7 @@
 services:
-  spotify_lookup.salutation:
+  spotify_lookup.api_service:
     class: Drupal\spotify_lookup\SpotifyLookup
     arguments: ['@config.factory']
+  spotify_api_values:
+    class: Drupal\spotify_lookup\Form\SpotifyLookupForm
+

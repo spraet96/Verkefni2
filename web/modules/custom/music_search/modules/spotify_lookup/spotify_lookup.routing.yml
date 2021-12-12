@@ -1,7 +1,7 @@
 spotify_lookup_search:
-  path: '/admin/config/spotify_lookup'
+  path: '/admin/config/spotify_API_config'
   defaults:
     _form: Drupal\spotify_lookup\Form\SpotifyLookupForm
-    _title: 'Spotify Lookup'
+    _title: 'Spotify API configuration'
   requirements:
     _permission: 'access content'
